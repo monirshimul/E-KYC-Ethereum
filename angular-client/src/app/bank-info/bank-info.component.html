@@ -1,0 +1,33 @@
+<div class="container center_div">
+  <div class="row">
+    <form #bankInfo="ngForm" action="/action_page.php" (ngSubmit)="onBankinfoSubmit()" novalidate>
+      <h3> Bank Information Form </h3>
+      <br>
+      
+
+                <div class="form-group">
+                  <label for="bank_uid">Bank Id:</label>
+                  <input type="bank_uid" class="form-control bankfiled" id="bank_uid"
+                  name="bank_uid" [(ngModel)]="Infobank.bank_uid">
+                </div>
+                
+                <div class="form-group">
+                  <label for="bank_passcode">Passcode:</label>
+                  <input type="bank_passcode" class="form-control bankfiled" id="bank_passcode"
+                  name="bank_passcode" [(ngModel)]="Infobank.bank_passcode">
+                </div>
+      
+            <div class="bankinfobutton_center">
+            <button style="float:right" type="submit" class="btn btn-primary">Submit</button>
+          </div>
+        
+    </form>
+  </div>
+  <div *ngIf = "isVisible" class="row">
+      <h3>Bank Name: {{bankName}}</h3> 
+  </div>
+</div>
+
+
+
+

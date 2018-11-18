@@ -1,0 +1,61 @@
+<form #accessaccount="ngForm" action="/action_page.php " class="access_center"(ngSubmit)="onAccessAccount()" novalidate>
+          <h3> Access KYC Form</h3>
+  <br>
+  
+
+        <div class="form-group accessfield">
+          <label for="bank_uid">Bank UId:</label>
+          <input type="bank_uid" class="form-control" id="bank_uid"
+          name="bank_uid" [(ngModel)]="Accessaccount.bank_uid">
+        </div>
+  
+        <div class="form-group accessfield">
+          <label for="bank_passcode">Bank Passcode:</label>
+          <input type="bank_passcode" class="form-control" id="bank_passcode"
+          name="bank_passcode" [(ngModel)]="Accessaccount.bank_passcode">
+        </div>
+
+        <div class="form-group accessfield">
+          <label for="nid">National ID:</label>
+          <input type="nid" class="form-control" id="nid"
+          name="nid" [(ngModel)]="Accessaccount.nid">
+        </div>
+
+          <div class="accessbutton_center">
+          <button style="float:right"  type="submit" class="btn btn-primary">Submit</button>
+        </div>
+  
+  </form>
+
+  <br>
+  <br>
+  <div class="row access_center"*ngIf="isVisible" style="width:300px">
+    <ul>
+      <h4><li> Name : {{name}}</li></h4>
+      <h4><li> Father Name : {{fatherName}}</li></h4>
+      <h4><li> Date of Birth : {{dob}}</li></h4>
+      <h4><li> Mobile Number : {{mobileNumber}}</li></h4>
+      <h4><li> Current Address : {{currentAddress}}</li></h4>
+      <h4><li> Gender : {{gender}}</li></h4>
+    </ul>
+
+  </div>
+<!--
+<br> <br>
+  <div class="container">
+    <div class="row"*ngIf="isVisible">
+      <div class="col-md-4">
+          <ul>
+              <h3><li> Name : {{name}}</li></h3>
+              <h3><li> Father Name : {{fatherName}}</li></h3>
+            </ul>
+      </div>
+      <div class="col-md-4">
+          <ul>
+              <h3><li> Date of Birth : {{dob}}</li></h3>
+      <h3><li> Mobile Number : {{mobileNumber}}</li></h3>
+            </ul>
+      </div>
+    </div>
+  </div>
+  -->

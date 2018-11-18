@@ -1,0 +1,18 @@
+[
+  { 
+   "bankUid": "Asia12345678",
+    "bPasscode":"AsiaPaltan"
+  },
+ 
+  { 
+    "bankUid": "City12345678",
+    "bPasscode":"cityPaltan"
+  },
+
+  { 
+   "bankUid": "Standard12345678",
+    "bPasscode":"StandardPaltan"
+  }
+
+
+]
